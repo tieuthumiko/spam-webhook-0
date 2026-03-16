@@ -48,7 +48,18 @@ const webhookurl = new WebhookClient({ id: process.env.WEBHOOK_ID, token: proces
 
 setInterval(() => {
     webhookurl.send({embeds: [ embed ]});
-  }, 1);
+  }, 5000);
+
+  function sleep(ms){
+ return new Promise(r=>setTimeout(r,ms));
+}
+
+async function send(){
+ while(true){
+  await webhook.send("test");
+  await sleep(2000);
+ }
+}
 
 app.get("/", (req,res)=>{
     res.send("Bot is alive");
