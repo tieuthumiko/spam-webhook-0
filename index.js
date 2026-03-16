@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 const embed = new MessageEmbed()
     .setColor('#555555')
-    .setAuthor({ name: '# miko ontop'})
+    .setAuthor({ name: ''})
     .setDescription(`# miko ontop
         # miko ontop
         # miko ontop
