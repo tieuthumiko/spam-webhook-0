@@ -1,0 +1,12 @@
+{
+  "name": "discord-webhook-spammer",
+  "version": "1.0.0",
+  "description": "Discord webhook spammer.",
+  "main": "index.js",
+  "author": "DuckySoLucky",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.17.1",
+    "dotenv": "^17.3.1"
+  }
+}
